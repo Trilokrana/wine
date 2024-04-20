@@ -1,24 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+// app.js
+import React, { useState } from "react";
+import { Container } from "@mantine/core";
+import wineData from "./WineDataSet/WineData";
+import FlavanoidStatsTable from "./Components/Flavanoids";
+import WineStatisticsTable from "./Components/Gamma";
 
 function App() {
+  const [data, setData] = useState(wineData);
+  console.log(data);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container size="sm">
+      <h1 style={{textAlign:"center"}}>Class-wise Statistical Measures of Flavanoids</h1>
+      <FlavanoidStatsTable />
+      <h1 style={{textAlign:"center"}}>Class-wise Statistical Measures of Gamma</h1>
+      <WineStatisticsTable />
+    </Container>
   );
 }
 
