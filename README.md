@@ -35,6 +35,6 @@ To run the project, use the following command:
 bash
 
 yarn start
-The project should now be running locally and will be accessible via the provided address.
+The project should now be running locally and will be accessible via the provided address.<br/>
 Showcase of Project Screenshots
 ![Screenshot 2024-04-20 145314](https://github.com/Trilokrana/wine/assets/58104039/23cf07bc-0367-422f-9690-5858c1a7fddc)
