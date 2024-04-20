@@ -6,7 +6,7 @@ import FlavanoidStatsTable from "./Components/Flavanoids";
 import WineStatisticsTable from "./Components/Gamma";
 
 function App() {
-  const [data, setData] = useState(wineData);
+  const [data] = useState(wineData);
   console.log(data);
   return (
     <Container size="sm">
